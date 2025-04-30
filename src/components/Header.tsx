@@ -1,16 +1,10 @@
-import { Menu } from 'lucide-react';
+import SideMenu from "./SideMenu";
 
 export default function Header() {
     return (
         <header className="absolute top-0 left-0 w-screen h-28 z-50 bg-[#ffffff] flex items-center justify-center border-b-[6px] border-[#e9f4f7] ">
             <div className="h-full w-full relative flex items-center">
-
-                {/* Menu Button  */}
-                <a href="#" className=''>
-                    <button className="ml-8 right-28 scale-110 hover:scale-105 transition-all duration-400 focus:outline-none border-none">
-                        <Menu className="text-[#435680] h-10 w-auto" />
-                    </button>
-                </a>
+                <SideMenu/>
                 <a href="#" className='font-cCode ml-8 mt-3 text-[29px] text-[#0b0e22] hover:text-[#0b0e22] hover:scale-105 hover:underline transition-all duration-100'>About</a>
 
             </div>
